@@ -1,5 +1,5 @@
 
-# ![Logo](./images/logo.png) Let's Chat D-App
+# ![Logo](./images/logo.png) 
 
 # Let's Chat D-App
 
