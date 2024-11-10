@@ -1,0 +1,286 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "postId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "message",
+						"type": "string"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "author",
+						"type": "address"
+					}
+				],
+				"name": "NewPost",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "postId",
+						"type": "uint256"
+					}
+				],
+				"name": "PostDisliked",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "postId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "newMessage",
+						"type": "string"
+					}
+				],
+				"name": "PostEdited",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "postId",
+						"type": "uint256"
+					}
+				],
+				"name": "PostLiked",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_postId",
+						"type": "uint256"
+					}
+				],
+				"name": "dislikePost",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_postId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_newMessage",
+						"type": "string"
+					}
+				],
+				"name": "editPost",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getPosts",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "message",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "author",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timestamp",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "modified",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "likes",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "dislikes",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct MiniSocial.Post[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_postId",
+						"type": "uint256"
+					}
+				],
+				"name": "likePost",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "posts",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "message",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "author",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "modified",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "likes",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "dislikes",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_message",
+						"type": "string"
+					}
+				],
+				"name": "publishPost",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "userPosts",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Socialmedia.sol": "MiniSocial"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Socialmedia.sol": {
+			"keccak256": "0x6c36107f021ca825a6722f32738e8a6c55e9b6a330194668791f35cc95be2fdc",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fd16e0870765e60e43cb07390af49804eadee400fd0ef406a119bd76628958b4",
+				"dweb:/ipfs/QmTSH46D97pt8PTBig3Y5vVYe5c1sxraMQRaYyCsjvGrZc"
+			]
+		}
+	},
+	"version": 1
+}
