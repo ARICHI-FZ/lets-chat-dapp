@@ -54,7 +54,7 @@ Bienvenue sur **Let's Chat DApp**, un réseau social décentralisé construit su
 
 Voici un aperçu de l'interface :
 
-![Interface Screenshot](interface-screenshot.png)
+![Interface Screenshot](interface.png)
 
 ## Contribuer
 
