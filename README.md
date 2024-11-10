@@ -1,4 +1,5 @@
 
+# ![Logo](./images/logo.png) Let's Chat D-App
 
 # Let's Chat D-App
 
@@ -29,7 +30,7 @@ Bienvenue sur **Let's Chat DApp**, un réseau social décentralisé construit su
 
 1. Clonez ce repository :
    ```bash
-   git clone https://github.com/tonnom/lets-chat-dapp.git
+   git clone https://github.com/ARICHI-FZ/lets-chat-dapp.git
    cd lets-chat-dapp
    ```
 
