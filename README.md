@@ -1,5 +1,5 @@
 
-# <div align="center"> ![Logo](./images/logo.png) </div> 
+# <div align="center"> ![Logo](logo.png) </div> 
 
 # Let's Chat D-App
 
@@ -54,7 +54,7 @@ Bienvenue sur **Let's Chat DApp**, un réseau social décentralisé construit su
 
 Voici un aperçu de l'interface :
 
-![Interface Screenshot](./images/interface-screenshot.png)
+![Interface Screenshot](interface-screenshot.png)
 
 ## Contribuer
 
