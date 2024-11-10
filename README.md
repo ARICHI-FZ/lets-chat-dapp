@@ -1,5 +1,5 @@
 
-# ![Logo](./images/logo.png) 
+# <div align="center"> ![Logo](./images/logo.png) </div> 
 
 # Let's Chat D-App
 
